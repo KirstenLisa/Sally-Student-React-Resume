@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sally's Resume</title>
+  <link href="index.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+     
+     <div id="application-root"></div>
+              
+    <script
+        src="https://unpkg.com/react@16/umd/react.development.js">
+    </script>
+    <script
+        src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+    </script>
+    <script
+        src="https://unpkg.com/babel-standalone@6/babel.min.js">
+    </script>
+    <script type="text/babel">
+
+    function App(props) {
+        return (
+            <div>
+                {props.children}
+            </div>
+            );
+    }   
+
+
+     // Nested elements inside the App
+ReactDOM.render(
+    <App className='my-class'>
+  <header className='my-class'>
+        <h1>Sally Student</h1>
+        <h2>Web Developer</h2>
+        <img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" alt="Sally Noname's Profile Pic" />
+    </header>
+        <main>
+        <p>I'm an aspiring full stack web developer. I love cats, coding, and crocheting.</p>
+      <section>
+        <h3>Languages</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Python</li>
+          <li>React</li>
+          <li>C++</li>
+        </ul>
+        </section>
+      
+      <section>
+        <h3>References</h3>
+        <ul>
+          <li><a href="https://repl.it/@KirstenLisa/Resume-Challenge" alt="Link to my repl.it page">Sally on repl.it</a></li>
+          <li><a
+          href="https://github.com/" alt="Link to github profile">My Github Profile</a>
+          </li>
+        </ul> 
+       </section> 
+      
+
+      <section>
+        <h3>Working Experience</h3>
+        <ul>
+          <li>EinsPlus (ARD), 03/2011 – 12/2014
+          Author, Reporter
+          Independently shooting and editing of 30 minutes TV-documentaries on political and social topics.
+            </li>
+          <li>AZ Media TV GmbH, 01/2009 – 07/2010
+          Traineeship
+          Researching, planning, interviewing and writing for 30 minutes TV-documentaries on political and social topics. 
+            </li>
+          </ul>
+
+        </section> 
+
+      <section>
+        <h3>Education</h3>
+        <ul>
+          <li>MA Degree
+        Journalism and Cinematography
+        Johannes Gutenberg University, Mainz
+        Final grade: 1,6
+        2000 – 2006</li>
+    
+
+        <li>Scholarship
+        Erasmus/Sokrates-Program
+        Charles University, Prague
+        2003</li>
+        </ul>
+        </section>
+      
+      <address>
+        Sally Student
+        <a href="mailto:sally@noname.com">Sally's Email</a>
+        Call me: 555 765 432
+        </address>
+      </main>
+    </App>,
+  document.querySelector('#application-root')
+);
+ 
+    </script>
+             
+</body>
+</html>

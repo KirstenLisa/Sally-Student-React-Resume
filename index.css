@@ -1,0 +1,63 @@
+body {
+    font-family: 'Quicksand';
+    font-size: 20px;
+    color: black;
+  }
+
+header {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px;
+}
+
+  main {
+      display: flex;
+      flex-direction: column;
+      margin-left: 20px;
+  }
+  
+  h1, h2, h3 {
+    font-weight: bold;
+  }
+
+  img {
+      height: 160px;
+  }
+
+  a {
+    text-decoration: none;
+    }
+
+  a:-webkit-any-link {
+    color: black;
+    text-decoration: none;
+    }
+
+  ul {
+      list-style: none;
+  }
+  
+  a:link {
+    color: gray;
+  }
+  
+  a:hover {
+    font-size: 150%;
+  }
+  
+  li:hover {
+    font-size: 120%;
+  } 
+
+  address {
+      display: flex;
+      justify-content: space-between;
+      background-color: #d3d3d329;
+      width: 100%;
+      margin-top: 30px;
+      height: 30px;
+      padding: 20px;
+  }
